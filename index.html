@@ -64,7 +64,7 @@
     google.charts.load('current', { packages: ['corechart'] });
 
     function zeigeStatistik() {
-      fetch("https://script.google.com/macros/s/AKfycbwrZFhx_OvudabwMtwst-60okzWh6ucKxGwqAYgD_3Lx5GAgfOg1paHmB9LRlnz5oF-/exec")
+      fetch("https://script.google.com/macros/s/AKfycbwrZFhx_OvudabwMtwst-60okzWh6ucKxGwqAYgD_3Lx5GAgfOg1paHmB9LRlnz5oF-/exec?mode=statistik")
         .then(response => response.json())
         .then(data => drawChart(data))
         .catch(err => {
